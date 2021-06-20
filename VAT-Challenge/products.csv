@@ -1,0 +1,25 @@
+itemId,productId,country,vat,name,description
+1,1,DE,7,boskop,"Boskop, a classic"
+1,2,DE,7,boskop,"Boskop, a classic"
+1,3,DE,7,boskop,"Boskop, a classic"
+1,4,DE,7,boskop,"Boskop, a classic"
+1,5,AT,10,boskop,"Boskop, a classic"
+1,6,AT,10,boskop,"Boskop, a classic"
+1,7,AT,10,boskop,"Boskop, a classic"
+1,8,AT,10,boskop,"Boskop, a classic"
+1,9,CH,2.5,boskop,"Boskop, a classic"
+1,10,CH,2.5,boskop,"Boskop, a classic"
+3,24,DE,7,early_joe,Augustapfel
+3,21,DE,7,early_joe,Augustapfel
+3,22,DE,7,early_joe,Augustapfel
+3,23,DE,7,early_joe,Augustapfel
+2,11,DE,7,golden_delicious,Another classic
+2,12,DE,7,golden_delicious,Another classic
+2,13,DE,7,golden_delicious,Another classic
+2,14,DE,7,golden_delicious,Another classic
+2,15,AT,10,golden_delicious,Another classic
+2,16,AT,10,golden_delicious,Another classic
+2,17,AT,10,golden_delicious,Another classic
+2,18,AT,10,golden_delicious,Another classic
+2,19,CH,2.5,golden_delicious,Another classic
+2,20,CH,2.5,golden_delicious,Another classic
