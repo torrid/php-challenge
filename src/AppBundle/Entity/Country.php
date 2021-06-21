@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
+use Symfony\Component\Validator\Constraints as Assert;
 use JMS\Serializer\Annotation as Serializer;
 
 /**
@@ -33,6 +34,18 @@ class Country
      * @Serializer\Groups(groups={"country", "store"})
      */
     private $name;
+
+    /**
+     * @var float|null
+     *
+     * @ORM\Column(name="vat", type="decimal", precision=4, scale=2, nullable=false, options={"default" = "7.00"})
+     * @Serializer\Expose
+     * @Serializer\Groups(groups={"country", "store"})
+     * @Serializer\Type("double")
+     * @Assert\NotBlank
+     * @Assert\GreaterThan(value="0", message="VAT must be greater than 0")
+     */
+    private $vat = 7.00;
 
     /**
      * @var Product[]|ArrayCollection
@@ -85,5 +98,21 @@ class Country
     {
         return $this->name;
     }
-}
+    /**
+     * @return float|null
+     */
+    public function getVat(): ?float
+    {
+        return $this->vat;
+    }
 
+    /**
+     * @param float|null $vat
+     * @return Product
+     */
+    public function setVat(?float $vat): Country
+    {
+        $this->vat = $vat;
+        return $this;
+    }
+}

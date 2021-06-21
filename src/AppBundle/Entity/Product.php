@@ -43,18 +43,6 @@ class Product implements ChangeAwareEntityInterface
     private $price = 0;
 
     /**
-     * @var float|null
-     *
-     * @ORM\Column(name="vat", type="decimal", precision=4, scale=2, nullable=false, options={"default" = "7.00"})
-     * @Serializer\Expose
-     * @Serializer\Groups(groups={"product", "product_minimal"})
-     * @Serializer\Type("double")
-     * @Assert\NotBlank
-     * @Assert\GreaterThan(value="0", message="VAT must be greater than 0")
-     */
-    private $vat = 7.00;
-
-    /**
      * @var \DateTime|null
      *
      * @ORM\Column(name="availableFrom", type="datetime")
@@ -185,24 +173,6 @@ class Product implements ChangeAwareEntityInterface
     public function setPrice(?int $price): Product
     {
         $this->price = $price;
-        return $this;
-    }
-
-    /**
-     * @return float|null
-     */
-    public function getVat(): ?float
-    {
-        return $this->vat;
-    }
-
-    /**
-     * @param float|null $vat
-     * @return Product
-     */
-    public function setVat(?float $vat): Product
-    {
-        $this->vat = $vat;
         return $this;
     }
 
@@ -652,7 +622,7 @@ class Product implements ChangeAwareEntityInterface
 
     public function getTrackList(): array
     {
-        return ['price', 'vat', 'availableFrom', 'availableUntil', 'country', 'item'];
+        return ['price', 'availableFrom', 'availableUntil', 'country', 'item'];
     }
 
 

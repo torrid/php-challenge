@@ -26,7 +26,7 @@ class CreateUpdateFormType extends AbstractType
             ->add('country', EntityType::class, ['class' => Country::class, 'choice_label' => 'id', 'required' => true])
             ->add('notes', TextType::class, ['label' => 'Notes', 'required' => true])
             ->add('price', IntegerType::class, ['label' => 'Price', 'required' => true, 'description' => 'price in cent'])
-            ->add('vat', NumberType::class, ['label' => 'vat', 'required' => true])
+/*            ->add('vat', NumberType::class, ['label' => 'vat', 'required' => true]) */
             ->add('available_from', DateTimeType::class, ['label' => 'From', 'required' => true, 'widget' => 'single_text', 'date_format' => 'yyyy-MM-dd'])
             ->add('available_until',DateTimeType::class, ['label' => 'Until', 'required' => true, 'widget' => 'single_text', 'date_format' => 'yyyy-MM-dd'])
             ->add('min_subscription_time', IntegerType::class, ['label' => 'Subscription time', 'required' => true])
