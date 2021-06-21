@@ -1,1 +1,1 @@
-./src/AppBundle/Resources/doc/challenges/change_vat_handling.md
+../src/AppBundle/Resources/doc/challenges/change_vat_handling.md
