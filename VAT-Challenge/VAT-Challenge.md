@@ -4,6 +4,8 @@ Currently the VAT is hard-coded into the database, in the project table. Therefo
 The different types of VAT should be stored independently of the Product, and rather depend of the country of origin. 
 On the other hand, many EU-Countries provide different tax rates, depending on the kind of product, or type of Trade. 
 *Example: Germany: 19.00% for usual value added trades, 7.00% reduced rate for certain types of businesses or products, especially agricultural goods.*
+
+VAT rates Source: https://www.avalara.com/vatlive/en/vat-rates/european-vat-rates.html 
 ______
 
 Tasks, User Stories
