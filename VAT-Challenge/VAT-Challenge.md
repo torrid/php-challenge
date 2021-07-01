@@ -16,6 +16,7 @@ Find the current data by dumping product, country and VAT into a text/CSV file. 
  * moving the VAT values to their new destination, and
  * creating a test case for comparision of new vs. old behaviour.
 
+
 Create a table for all (EU) countries, with possible and applicable VAT rate, identify the most common rate from the types of products as seen in the dump table. 
 
 Invent some test cases for the desirable behaviour.
@@ -28,8 +29,10 @@ Document.
 
 
 User Story
+
+*When inserting a new product, the user doesn't have to lookup or know the current VAT rate for the current product or country. Instead the API inserts the VAT by itself. *
+
 ----------
-When inserting a new product, the user doesn't have to lookup or know the current VAT rate for the current product or country. Instead the API inserts the VAT by itself. 
 
 - Break down the tasks  
 
